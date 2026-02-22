@@ -1,0 +1,27 @@
+# 忽略编译生成的可执行文件（Windows）
+*.exe
+*.exe.stackdump
+*.dll
+*.obj
+*.o
+*.a
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# 忽略 output 文件夹（存放编译后的 exe）
+output/
+
+# 忽略 VS Code 本地缓存（可选，保留 .vscode 配置文件夹）
+.vscode/settings.json
+.vscode/extensions.json
+.vscode/*.log
+.vscode/launch.json.d/
+
+# 忽略系统临时文件
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
