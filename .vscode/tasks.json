@@ -2,8 +2,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "g++",
-            "command": "g++",
+            "label": "g++ build",
+            "type": "shell",
+            "command": "D:/mingw64/bin/g++.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -11,25 +12,12 @@
                 "${workspaceFolder}/output/${fileBasenameNoExtension}.exe",
                 "-fexec-charset=GBK"
             ],
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceRoot}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            },
+            "problemMatcher": "$gcc",
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "编译当前文件到 output 目录"
         }
     ]
 }
